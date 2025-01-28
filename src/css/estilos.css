@@ -1,0 +1,98 @@
+.titulo{
+    font-family: 'Moonlit', sans-serif;
+    font-size: 2.5em;
+}
+
+.nome{
+    font-family: 'Moonlit', sans-serif;
+    font-size: 2em;
+}
+
+.informacoes{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+body{
+    background-image: url(../imagens/AdobeStock_182121833.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 30px;
+}
+
+.cabecalho .titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho .titulo{
+    color: aliceblue;
+}
+
+.card{
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    padding: 12px;
+    gap: 5px;
+    position: absolute;
+}
+
+.card.selecionado{
+    opacity: 1;
+}
+
+.lista-cartas{
+    width: 300px;
+    height: 565px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+}
+
+.nome{
+    background: radial-gradient(circle,pink, violet);
+    border: 1px, solid;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.informacoes, .informacoes-carta{
+    background: radial-gradient(circle,pink, violet);
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn-seta{
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 0;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-seta.btn-voltar{
+    transform: rotateY(180deg);
+}
+
+.btn-seta:hover{
+    background-color: gray;
+}
